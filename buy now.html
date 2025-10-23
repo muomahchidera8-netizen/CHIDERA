@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+fieldset {
+  border: 2px solid #4a90e2; /* Only border color */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  width: 200px;
+}
+
+legend {
+  font-weight: bold;
+  color: #4a90e2;
+  padding: 0 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label & input */
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4a90e2;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #357ab7;
+}
+
+/* Make label and input side-by-side on bigger screens */
+@media (min-width: 600px) {
+  .form-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  label {
+    width: 150px;
+    margin-bottom: 0;
+  }
+}
+
+</style>
+<body>
+  <required-attribute>
+
+  </required-attribute>
+    <form>
+      <div class="boy">
+        <h1>Enter your information to procced your purchase</h1>
+        </div>
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Account Details</legend>
+
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+    </div>
+  </fieldset>
+
+  <button>
+
+    <a href="submit.html">submit</a>
+
+  </button>
+ <select id="gender" name="gender">
+        <option value="pay by transaction">pay by transaction</option>
+         <option value="pay with btc">pay with btc</option>
+  </button>
+  </required-attribute>
+</body>
+</html>
